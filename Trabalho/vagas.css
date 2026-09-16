@@ -1,0 +1,170 @@
+/* Configuração geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+
+/* Parte azul */
+
+header {
+    height: 70px;
+    background-color: #2f80ed;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+}
+
+
+/* Nome do site */
+
+header h2 {
+    color: white;
+    font-size: 30px;
+}
+
+
+/* Botão Cursos */
+
+.btn-cursos {
+    background-color: white;
+    color: #2f80ed;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 10px 25px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* Ícone do usuário */
+
+.usuario {
+    font-size: 30px;
+
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background-color: white;
+
+
+    margin-top: -140px;
+    margin-left: 2px;
+}
+
+
+/* Barra de pesquisa */
+
+.pesquisa {
+    width: 50%;
+    height: 50px;
+
+    border: 1px solid #aaa;
+    border-radius: 40px;
+
+    margin: 100px auto;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+}
+
+
+.pesquisa span {
+    font-size: 27px;
+}
+
+
+.pesquisa input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 18px;
+
+    padding-left: 15px;
+}
+
+
+/* Área principal */
+
+main {
+    width: 80%;
+
+    margin: 150px auto 30px;
+}
+
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Card da vaga */
+
+.vaga {
+    background-color: #eeeeee;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    max-width: 800px;
+}
+
+
+.vaga h3 {
+    margin-bottom: 10px;
+}
+
+
+.vaga p {
+    margin: 5px 0;
+}
+
+
+/* Botão da vaga */
+
+.btn-vaga {
+    margin-top: 15px;
+
+    background-color: #2f80ed;
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+}
+
+
+/* Efeito ao passar o mouse */
+
+.btn-vaga:hover {
+    opacity: 0.8;
+}
+
+
+.btn-cursos:hover {
+    background-color: #eeeeee;
+}
