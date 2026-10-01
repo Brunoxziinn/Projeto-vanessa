@@ -1,77 +1,194 @@
+/* o body da pagina */
+.meu_body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(144, 169, 216);
+}
 
-.container_cabeca {
+/* o cabeçalho da pagina */
+.meu_header {
     border: 2px;
-    background-color: rgb(252, 252, 253);
+    background-color: rgb(243, 242, 242);
+    height: 90px;
     width: 100%;
-    height: 80px;
+    border-bottom: solid  1px rgb(121, 121, 121);
+}
+.header_design {
     display: flex;
-    border-bottom: 1.5px solid #777777;
-    font-size: 12px;
-    align-items: center;
-    justify-content: flex-start;
+    font-family: "Fredoka", sans-serif;
 }
 
 .container_barra {
-   border: 2px;
-   border-radius: 9px;
-   background-color: rgb(163, 162, 162);
-   height: 35px;
-   width: 30%;
-   display: flex;
-   margin-left: auto;
-   margin-right: 450px;
-}
-
-.Perfil {
-   background-color: rgb(255, 255, 255);
-   border-radius: 10px;
-   align-items: center;
-   box-shadow: 0px 4px 8px; color: rgb(10, 10, 10);
-   overflow: hidden;
-   position: relative;
-   margin: 0 auto;
-   width: 100%;
-   height: 550px;
-
-}
-
-.Banner {
-background-image: url('../Imagens/Capa\ de\ fundo.png.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-width: 100%;
-height: 250px;
-}
-
-.Foto {
-    width: 175px;
-    height: 150px;
-    border-radius: 90%;
+    border: 2px;
+    background-color: rgba(129, 182, 189, 0.555);
+    height: 50px;
+    width: 48%;
+    margin-left: 150px;
+    margin-top: 17px;
+    border-radius: 11px;
     display: flex;
+}
+
+.h6_barra {
+    display: flex;
+    font-family: Arial;
+    margin-left: 25px;
+    margin-top: 2px;
+}
+
+/* Separação das bordas */
+.corpo_container {
+    display: flex;
+}
+
+
+/* pagina de menu */
+.container_menu {
+    border: 2px;
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 380px;
+    margin-left: 88px;
+    box-shadow: 2px 4px 8px black;
+    font-family: arial;
+}
+
+.home {
+    margin-top: 60px;
+    margin-left: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+.Vagas {
+    margin-left: 35px;
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+/*Pagina do perfil*/
+.container_perfil {
+    border: 2px;
+    height: 350px;
+    width: 69%;
+    background-color: rgb(248, 248, 248);
+    margin-left: 50px;
+    margin-top: 27px;
+    border-radius: 10px;
     align-items: center;
-    margin-top: 33px;
+    overflow: hidden;
 }
 
-.Perfil-info {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+/*Informações do perfil*/
+
+.capa_perfil {
+    width: 100%;
+    height: 180px;
 }
 
-.Perfil-infoh2 {
-    display: flex;
-    margin: 0;
+.capa_perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.Texto-info {
+.card_perfil {
     display: flex;
+}
+
+.foto_perfil {
+    border-radius: 100px;
+    height: 200px;
+    object-fit: cover;
+    display: flex;
+    margin-left: 20px;
+    position: relative;
+    z-index: 2;
+    margin-top: -50px;
+}
+
+.card_texto {
+    font-family: Arial;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 65px;
     flex-direction: column;
-    margin-top: 50px;
+    gap: 4px;
+    margin-top: -0.1px;
+    margin-top: 20px;
 }
 
-.container_corpo {
-    border: 50px solid white;
-    background-color: rgb(255, 253, 253);
-    box-shadow: 0px 4px 8px; color: rgb(10, 10, 10);
-    border-radius: 40px;
+.card_texto h6,
+.card_texto p {
+    margin: 3px;
+}
+
+.icones_perfil {
+    height: 30px;
+}
+.atualmente_vagas {
+    border: 2px;
+    width: 45%;
+    height: 35px;
+    background-color: #3fdef350;
+    border-radius: 9px;
+    display: flex;
+    font-size: 12px;
+    width: fit-content;
+}
+
+/* parte adicional do sobre min */
+
+.parte_adicional {
+    display: flex;
+}
+
+.cont_menu {
+    border: 2px;
+    height: 500px;
+    width: 20%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 88px;
+    box-shadow: 2px 4px 8px black;
+}
+
+.sobre_mim {
+    border: 2px;
+    height: 620px;
+    width: 45%;
+    background-color: rgb(248, 248, 250);
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: arial;
+    font-size: 20px;
+}
+
+.edit_perfil {
+    display: flex;
+}
+
+.card_edit {
+    border: 2px solid black;
+    width: 19%;
+    height: 40px;
+    background-color: rgb(254, 254, 255);
+    display: flex;
+    margin-left: 580px;
+    margin-top: 10px;
+    border-radius: 9px;
+
+}
+
+.conatiner_habilidades {
+    border: 2px;
+    width: 22.6%;
+    height: 620px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 10px;
+    font-family: arial;
+    font-size: 20px;
 }

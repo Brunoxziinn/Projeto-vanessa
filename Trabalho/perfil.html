@@ -1,57 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/Perfil.css">
-    <title>Perfl do usuário</title>
+    <title>Perfil do usuario</title>
+    <link rel="stylesheet" href="./Css/perfil.css">
+    <!--Fonte exportada-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 </head>
+<body class="meu_body">
 
-<body style="background-color: rgb(216, 216, 218); margin: 0; font-family: arial;">
-
-    <header class="container_cabeca">
-       <img src="Imagens/logo.ico" alt="Logo do Site" width="75px">
-       <h1>Primeiros Passos</h1>
-       <div class="container_barra">
-            <img src="Imagens/Lupa.png" height="19px" style="margin-top: 8px; margin-left: 10px;">
-            <p style="margin-left: 20px; margin-bottom: 10px;">Busca informações...</p>
-       </div>
-       
+    <!--Cabeçalho da pagina-->
+    <header class="meu_header">
+        <div class="header_design">
+            <img src="./Imagens/logo.ico" style="height: 71px; margin-left: 90px; margin-top: 8px;">
+            <h1 style="color: rgb(7, 7, 68); margin-left: 10px;">Primeiros</h1>
+            <h1 style="margin-left: 10px;">Passos</h1>
+            <!--barra de pesquisa-->
+            <div class="container_barra">
+                <img src="./Imagens/Lupa.png" alt="logo_lupa" style="height: 25px; margin-left: 15px; margin-top: 13px;">
+                <div class="h6_barra">
+                    <p>Buscar por cursos, empresas...</p>
+                </div>
+            </div>
+            <img src="./Imagens/email.png" alt="logo_email" style="height: 45px; margin-left: 55px; margin-top: 20px;">
+            <img src="./Imagens/Sino.png" alt="logo_sino" style="height: 65px; margin-left: 20px; margin-top: 8px;">
+            <img src="./Imagens/Perfil.png" alt="Logo_perfil" style="height: 43px; border-radius: 80px; margin-top: 20px; margin-left: 15px;">
+            <img src="./Imagens/Seta_baixo.png" alt="Logo_seta" style="height: 25px; margin-top: 29px; margin-left: 5px;">
+        </div>
     </header>
+    
+    
+    <!--Corpo do site-->
+    <!--Pagina do menu-->
 
-    <main style="padding-left: 11%; padding-right: 11%;">
-        <br>
-        <br>
-        
-        <div class="Perfil">
-            <div class="Banner"></div>
-            <div class="Perfil-info">
-                <img class="Foto" src="Imagens/Perfil.png" alt="imagem do perfil" style="margin-left: 20px;">
-                <div class="Texto-info">
-                    <h2 class="Perfil-infoh2">Franklin Clinton</h2>
-                    <p>27 • Recife, PE • (81) 94002-8922 • Franklincc@gmail.com • linkedin.com/in/Franklin</p>
-                    <p><strong>Atuo na manutenção preventiva e corretiva de módulos de propulsão a combustão e eletrônica veicular • Mecânico</strong></p>
+    <div class="corpo_container">
+        <div class="container_menu">
+            <div class="home">
+                <img src="./Imagens/home.png" alt="icone_home" style="height: 50px;">
+                <h3>Inicio</h3>
+            </div>
+
+            <div class="Vagas">
+                <img src="./Imagens/mala.png" alt="icone_vagas" style="height: 50px;">
+                <h3>Vagas</h3>
+            </div>
+
+        </div>
+
+    <!--Pagina prinncipal do perfil-->
+
+        <div class="container_perfil">
+            <!--Imagem do banner-->
+            <div class="capa_perfil">
+                <img src="./Imagens/wallpaper.png" alt="fundo">
+            </div>
+            <!--Informações do perfil-->
+            <div class="card_perfil">
+                <img src="./Imagens/Perfil.png" alt="Logo_perfil" class="foto_perfil">
+                <div class="card_texto">
+                    <h6 style="font-size: 20px;">Marlon Brendon Coelho Couto Silva</h6>
+                    <p style="font-size: 15px;">25 • Pernambuco, PE • (81) 94002-8922  • Marlon.ccs@gmail.com</p>
+                    <p style="font-size: 15px;"><strong>Atuo na manutenção preventiva e corretiva de módulos de propulsão a combustão e eletrônica veicular</strong></p>
+                    <div class="atualmente_vagas">
+                        <img src="./Imagens/aprovado.png" alt="aprovado" style="height: 20px; margin-top: 8px; margin-left: 15px;">
+                        <p style="margin-top: 10px; margin-left: 8px;">Ativamente buscando oportunidades</p>
+                    </div>
+                </div>
+
+                <!--Icones-->
+                <img src="./Imagens/user.png" alt="icone_usuario" style="height: 30px; margin-top: 15px; margin-left: px;">
+                <img src="./Imagens/whatsapp.png" alt="icone_zap" style="height: 30px; margin-top: 15px; margin-left: 15px;">
+                <img src="./Imagens/linkedin.png" alt="icone_linkedin" style="height: 30px; margin-top: 15px; margin-left: 15px;">
+                <img src="./Imagens/link.png" alt="icone_link" style="height: 30px; margin-top: 15px; margin-left: 15px;">
+                <div class="container_connect">
+
                 </div>
             </div>
         </div>
+    </div>
 
-        <br>
-
-        <div class="container_corpo">
-            <h3 style="font-family: arial;">Experiencias Profissionais</h3>
-            <ul>
-                <li><strong>1958</strong></li>
-            </ul>
-            <p>Com apenas 17 anos, Pelé estreou na Copa de 1958 a partir do terceiro jogo e tornou-se a grande revelação do torneio, marcando seis gols na fase final. Seu desempenho genial incluiu o gol da vitória sobre o País de Gales nas quartas e três gols contra a França na semifinal.</p>
-            <ul>
-                <li> <strong>1962</strong> </li>
-            </ul>
-            <p>A Copa do Mundo de 1962, realizada no Chile, representou um capítulo de superação e contraste na carreira de Pelé. Após o brilho e a conquista de 1958, o camisa 10 chegou ao torneio no auge de sua forma física e técnica, sendo a grande esperança da Seleção Brasileira para buscar o bicampeonato mundial.</p>
-            <ul>
-                <li><strong>1970</strong></li>
-            </ul>
-            <p>A Copa do Mundo de 1970, no México, marcou a consagração definitiva de Pelé na história do esporte. Aos 29 anos e em sua quarta participação em Mundiais, o camisa 10 liderou uma das equipes mais espetaculares de todos os tempos, combinando maturidade, técnica impecável e genialidade em campo.</p>
+    <!--parte adicional-->
+    <div class="parte_adicional">
+        <div class="cont_menu">
+        
         </div>
-    </main> 
+        <div class="sobre_mim">
+            <div class="edit_perfil">
+                <h3 style="margin-left: 10px;">Sobre Mim</h3>
+                <div class="card_edit">
+                    <p style="margin-left: 33px; margin-top: -0.1px; margin-top: 10px; color: blue;">Edita perfil</p>
+                </div>
+            </div>
+            <p style="margin-left: 10px;">Especialista em resolução de problemas complexos sob pressão. Transformo <strong>ruídos metálicos</strong> não identificados em soluções de mobilidade sustentável</p>
+            <hr style="margin-left: 10px; margin-right: 10px;">
+            <h3 style="margin-left: 10px;">Experiência Profissional</h3>
+            <ul>
+                <li><strong>Durepoxi Automotive</strong></li>
+                <p>Sócio-Fundador & Engenheiro de Gambiarras (2015)</p>
+                <p>Pernambuco, Abril 2015-2021</p>
+                <li><strong>Rei do Tranco</strong></li>
+                <p>Analista de Barulhos Estranhos Pleno (2022)</p>
+                <p>Pernambuco, Janeiro 2022(Atual)</p>
+            </ul>
+            <hr style="margin-left: 10px; margin-right: 10px;">
+            <h3 style="margin-left: 10px;">Formação Acadêmica</h3>
+            <p style="margin-left: 12px; font-size: 15px;">Bacharelado em Engenharia Empírica de Estruturas Metálicas e Diagnóstico Acústico - UFRJ</p>
+            <p style="margin-left: 12px; font-size: 15px;">Técnico Superior em Gambiarras de Alta Precisão & Durepoxi Avançado - IIGI</p>
+        </div>
+        <!--to fazendo essa parte-->
+        <div class="conatiner_habilidades">
+            <h3 style="margin-left: 10px;">Habilidades</h3>
+        </div>
+
+    </div>   
 </body>
 </html>
