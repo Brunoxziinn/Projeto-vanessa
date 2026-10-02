@@ -1,0 +1,68 @@
+.meu_body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(144, 169, 216);
+}
+
+
+/* o cabeçalho da pagina */
+.meu_header {
+    border: 2px;
+    background-color: rgb(243, 242, 242);
+    height: 90px;
+    width: 100%;
+    border-bottom: solid  1px rgb(121, 121, 121);
+}
+
+.header_design {
+    display: flex;
+    font-family: "Fredoka", sans-serif;
+}
+
+.container_barra {
+    border: 2px;
+    background-color: rgba(129, 182, 189, 0.555);
+    height: 50px;
+    width: 48%;
+    margin-left: 150px;
+    margin-top: 17px;
+    border-radius: 11px;
+    display: flex;
+}
+
+.h6_barra {
+    display: flex;
+    font-family: Arial;
+    margin-left: 25px;
+    margin-top: 2px;
+}
+
+/* manter as bordas separadas*/
+.corpo_container {
+    display: flex;
+}
+
+/* pagina de menu */
+.container_menu {
+    border: 2px;
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 380px;
+    margin-left: 88px;
+    box-shadow: 2px 4px 8px black;
+    font-family: arial;
+}
+
+.home {
+    margin-top: 60px;
+    margin-left: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+.Vagas {
+    margin-left: 35px;
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+}
