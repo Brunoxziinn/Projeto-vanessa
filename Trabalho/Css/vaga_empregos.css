@@ -1,0 +1,60 @@
+.meu_header {
+    background-color: rgb(126, 52, 168);
+}
+
+.navbar-brand {
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+}
+
+.carrossel {
+    border: 2px;
+    background-color: white;
+    width: 300%;
+    height: 650px;
+    overflow: hidden;
+    border: transparent;
+}
+
+
+
+.barra_vagas {
+    border: 2px solid rgb(132, 0, 240);
+    border-radius: 35px;
+    width: 85%;
+    height: 500px;
+    background-color: rgb(255, 254, 255);
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    box-shadow: 0px 4px 8px rgb(255, 254, 254);
+}
+
+.card {
+    background-color: rgb(28, 10, 51);
+    margin-left: 67px;
+}
+
+.container_texto {
+    text-align: center;
+    font-family: serif;
+}
+
+.explorar_vagas {
+    background-color: rgb(85, 2, 105);
+    padding: 14px 28px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.container_botao {
+    text-align: center;
+}

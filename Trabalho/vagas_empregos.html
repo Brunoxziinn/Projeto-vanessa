@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas de emprego</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Css/vaga_empregos.css">
+
+</head>
+<body style="background-color: rgb(255, 255, 255); margin: 0; padding: 0;">
+    
+    <header class="meu_header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="Imagens/logo.ico" alt="logo" width="50" height="50" class="d-inline-block align-text-top" style="display: flex;">Primeiro Passo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cursos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Perfil
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ver perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Configuração</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Procurando algo..." aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Procurar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+
+    <div class="container_texto">
+        <H3 style="font-size: 48px;">"Cada nova oportunidade carrega a chance de começar melhor."</H3>
+        <p style="font-size: 25px;">Impusione sua carreira em tecnologia com nossos cursos e oportunidades</p>
+    </div>
+
+    <div class="container_botao">
+        <button class="explorar_vagas" style="color: white;">Explorar vagas</button>
+    </div>
+
+    <br>
+
+    <div>
+        <p style="margin-left: 160px; font-size: 35px;">oportunidades em Destaques!</p>
+        <div class="barra_vagas">
+            <div class="card" style="width: 30rem;">
+                <img src="Imagens/Imagem_Vagas.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;">Desenvolvedor(a) Junior</h5>
+                    <p class="card-text" style="color: yellow; font-size: 12px;">Procuramos programador(a) em início de carreira com conhecimentos em HTML, CSS e JavaScript para integrar a nossa equipe.</p>
+                    <p class="card-text" style="color: rgb(255, 255, 254); font-size: 15px;">Salário: R$ 3.500/mês / Modelo: Remoto</p>
+
+                    <a href="#" class="btn btn-primary">Enviar Curriculo</a>
+                </div>
+            </div>
+
+            <!-- segunda vaga -->
+            <div class="card" style="width: 30rem;">
+                <img src="Imagens/Imagem_vagas2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;">Desenvolvedor(a) Back-end Node.js Pleno</h5>
+                    <p class="card-text" style="color: yellow; font-size: 12px;">Construção de APIs RESTful, microsserviços e integração com bancos de dados relacionais.</p>
+                    <p class="card-text" style="color: rgb(255, 255, 254); font-size: 15px;">Salário: R$ 8.000/mês / Modelo: HIBRIDO (PE)</p>
+
+                    <a href="#" class="btn btn-primary">Enviar Curriculo</a>
+                </div>
+            </div>
+            
+            <!-- terceira vaga -->
+            <div class="card" style="width: 30rem;">
+                <img src="Imagens/Imagem_Vagas3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;">Desenvolvedor(a) Back-end Node.js Pleno</h5>
+                    <p class="card-text" style="color: yellow; font-size: 12px;">Construção de APIs RESTful, microsserviços e integração com bancos de dados relacionais.</p>
+                    <p class="card-text" style="color: rgb(255, 255, 254); font-size: 15px;">Salário: R$ 8.000/mês / Modelo: HIBRIDO (PE)</p>
+
+                    <a href="#" class="btn btn-primary">Enviar Curriculo</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- java botstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Encerramento -->
+</body>
+</html>
