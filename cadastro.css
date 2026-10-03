@@ -49,3 +49,16 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #555;
 }
+
+.botao-cadastrar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botao-cadastrar:hover {
+    background-color: #0056b3;
+}
