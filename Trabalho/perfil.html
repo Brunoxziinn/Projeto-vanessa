@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil do usuario</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./Css/perfil.css">
     <!--Fonte exportada-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,22 +16,39 @@
 
     <!--Cabeçalho da pagina-->
     <header class="meu_header">
-        <div class="header_design">
-            <img src="./Imagens/logo.ico" style="height: 71px; margin-left: 90px; margin-top: 8px;">
-            <h1 style="color: rgb(7, 7, 68); margin-left: 10px;">Primeiros</h1>
-            <h1 style="margin-left: 10px;">Passos</h1>
-            <!--barra de pesquisa-->
-            <div class="container_barra">
-                <img src="./Imagens/Lupa.png" alt="logo_lupa" style="height: 25px; margin-left: 15px; margin-top: 13px;">
-                <div class="h6_barra">
-                    <p>Buscar por cursos, empresas...</p>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="Imagens/logo.ico" alt="logo" width="70" height="70" class="d-inline-block align-text-top" style="display: flex;">Primeiro Passo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vagas_cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Opções
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="perfil.html">Ver perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Configuração</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Procurando algo..." aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Procurar</button>
+                    </form>
                 </div>
             </div>
-            <img src="./Imagens/email.png" alt="logo_email" style="height: 45px; margin-left: 55px; margin-top: 20px;">
-            <img src="./Imagens/Sino.png" alt="logo_sino" style="height: 65px; margin-left: 20px; margin-top: 8px;">
-            <img src="./Imagens/Perfil.png" alt="Logo_perfil" style="height: 43px; border-radius: 80px; margin-top: 20px; margin-left: 15px;">
-            <img src="./Imagens/Seta_baixo.png" alt="Logo_seta" style="height: 25px; margin-top: 29px; margin-left: 5px;">
-        </div>
+        </nav>
     </header>
     
     
@@ -38,15 +57,6 @@
 
     <div class="corpo_container">
         <div class="container_menu">
-            <div class="home">
-                <img src="./Imagens/home.png" alt="icone_home" style="height: 50px;">
-                <h3>Inicio</h3>
-            </div>
-
-            <div class="Vagas">
-                <img src="./Imagens/mala.png" alt="icone_vagas" style="height: 50px;">
-                <h3>Vagas</h3>
-            </div>
 
         </div>
 
@@ -61,7 +71,7 @@
             <div class="card_perfil">
                 <img src="./Imagens/Perfil.png" alt="Logo_perfil" class="foto_perfil">
                 <div class="card_texto">
-                    <h6 style="font-size: 20px;">Marlon Brendon Coelho Couto Silva</h6>
+                    <h6 style="font-size: 20px;"><strong>Marlon Brendon Coelho Couto Silva</strong></h6>
                     <p style="font-size: 15px;">25 • Pernambuco, PE • (81) 94002-8922  • Marlon.ccs@gmail.com</p>
                     <p style="font-size: 15px;"><strong>Atuo na manutenção preventiva e corretiva de módulos de propulsão a combustão e eletrônica veicular</strong></p>
                     <div class="atualmente_vagas">
@@ -71,10 +81,11 @@
                 </div>
 
                 <!--Icones-->
-                <img src="./Imagens/user.png" alt="icone_usuario" style="height: 30px; margin-top: 15px; margin-left: px;">
+                <img src="./Imagens/user.png" alt="icone_usuario" style="height: 30px; margin-top: 15px; margin-left: 140px;">
                 <img src="./Imagens/whatsapp.png" alt="icone_zap" style="height: 30px; margin-top: 15px; margin-left: 15px;">
-                <img src="./Imagens/linkedin.png" alt="icone_linkedin" style="height: 30px; margin-top: 15px; margin-left: 15px;">
+                <img src="./Imagens/linkedin.png" alt="icone_linkedin" style="height: 30px; margin-top: 15px; margin-left: 14px;">
                 <img src="./Imagens/link.png" alt="icone_link" style="height: 30px; margin-top: 15px; margin-left: 15px;">
+                
                 <div class="container_connect">
 
                 </div>
@@ -113,8 +124,31 @@
         <!--to fazendo essa parte-->
         <div class="conatiner_habilidades">
             <h3 style="margin-left: 10px;">Habilidades</h3>
+            <ul>
+                <li>Comunicativo</li>
+                <li>Especialista em Gambiarra de Alta Precisão</li>
+                <li>Engenheiro de Motores & Terapeuta de Marea</li>
+                <li>Consultor de Barulhos Estranhos</li>
+                <li>Head de Fita Isolante & Enforca-Gato</li>
+                <li>Especialista em Martelada Estratégica</li>
+                <li>Analista Pleno de Luz de Injetora Acesa</li>
+                <LI>Cirurgia de Suspensão</LI>
+                <LI>Persuasão Orçamentária</LI>
+                <LI>Tranco em Segunda Marcha</LI>
+                <LI>Troca de Óleo no Olhômetro</LI>
+                <LI>Negociação de Orçamento</LI>
+                <LI>Resistência Psicológica a Marea</LI>
+                <LI>Leitura de Luz de Injetora</LI>
+                <li>Gestão de Crise e Pânico</li>
+                <li>Operação de Enforca-Gato</li>
+                <li>Martelada Estratégica</li>
+                <li>Diagnóstico Acústico</li>
+                <li>Engenharia de Gambiarra</li>
+            </ul>
         </div>
 
     </div>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>

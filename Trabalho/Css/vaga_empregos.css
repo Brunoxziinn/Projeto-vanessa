@@ -58,3 +58,19 @@
 .container_botao {
     text-align: center;
 }
+
+/*parte dos links*/
+
+.link_perfil {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link_sobre {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: baseline;
+}
