@@ -1,68 +1,257 @@
-.meu_body {
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap");
+
+/* ---------- Paleeeetaaaa ---------- */
+:root {
+    --fundo: rgb(144, 169, 216);
+    --cabecalho: rgb(243, 242, 242);
+    --borda-cabecalho: rgb(121, 121, 121);
+    --card: rgb(248, 248, 248);
+    --destaque: rgba(129, 182, 189, 0.555);
+    --destaque-claro: #3fdef350;
+    --texto: #1f2933;
+    --sombra: 2px 4px 8px rgba(0, 0, 0, 0.55);
+    --raio: 10px;
+}
+
+/* ---------- Base ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
     padding: 0;
-    background-color: rgb(144, 169, 216);
+    background-color: var(--fundo);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+    line-height: 1.6;
 }
 
-
-/* o cabeçalho da pagina */
-.meu_header {
-    border: 2px;
-    background-color: rgb(243, 242, 242);
-    height: 90px;
-    width: 100%;
-    border-bottom: solid  1px rgb(121, 121, 121);
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.header_design {
+a:focus-visible {
+    outline: 3px solid rgb(31, 78, 140);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+/* ---------- Cabeçalho ---------- */
+header {
     display: flex;
-    font-family: "Fredoka", sans-serif;
+    align-items: center;
+    gap: 40px;
+    min-height: 90px;
+    padding: 0 88px;
+    background-color: var(--cabecalho);
+    border-bottom: solid 1px var(--borda-cabecalho);
+    font-family: "Fredoka", Arial, sans-serif;
 }
 
-.container_barra {
-    border: 2px;
-    background-color: rgba(129, 182, 189, 0.555);
-    height: 50px;
-    width: 48%;
-    margin-left: 150px;
-    margin-top: 17px;
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+header nav {
+    flex: 1;
+    max-width: 700px;
+    min-height: 50px;
+    background-color: var(--destaque);
     border-radius: 11px;
     display: flex;
+    align-items: center;
 }
 
-.h6_barra {
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 25px;
     display: flex;
-    font-family: Arial;
-    margin-left: 25px;
-    margin-top: 2px;
+    gap: 30px;
+    width: 100%;
 }
 
-/* manter as bordas separadas*/
-.corpo_container {
+header nav a {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 9px;
+    transition: background-color 0.2s;
+}
+
+header nav a:hover {
+    background-color: var(--destaque-claro);
+}
+
+/* ---------- Cards de conteúdo ---------- */
+section {
+    max-width: 900px;
+    margin: 27px auto;
+    padding: 36px 50px 40px;
+    background-color: var(--card);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    font-size: 18px;
+}
+
+section h2 {
+    display: inline-block;
+    margin: 0 0 14px;
+    padding: 6px 16px;
+    background-color: var(--destaque);
+    border-radius: 11px;
+    font-family: "Fredoka", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+section h3 {
+    margin: 28px 0 8px;
+    font-family: "Fredoka", Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+section p {
+    margin: 0 0 18px;
+}
+
+/* ---------- Apresentação (primeiro card) ---------- */
+section:first-of-type {
+    margin-top: 40px;
+    padding: 50px 50px 46px;
+    text-align: center;
+}
+
+section:first-of-type h2 {
+    display: block;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    margin: 0 0 14px;
+    font-weight: 600;
+}
+
+section:first-of-type h2:first-of-type {
+    font-size: 36px;
+}
+
+section:first-of-type h2:nth-of-type(2) {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+section:first-of-type ul {
+    list-style: none;
+    margin: 28px 0 0;
+    padding: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
 }
 
-/* pagina de menu */
-.container_menu {
-    border: 2px;
-    background-color: rgb(255, 255, 255);
-    width: 20%;
-    height: 380px;
-    margin-left: 88px;
-    box-shadow: 2px 4px 8px black;
-    font-family: arial;
+/* ---------- Botões (links dentro dos cards) ---------- */
+section ul a,
+section > a {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: var(--destaque);
+    border-radius: 11px;
+    font-family: "Fredoka", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
-.home {
-    margin-top: 60px;
-    margin-left: 35px;
+section ul a:hover,
+section > a:hover {
+    background-color: var(--destaque-claro);
+}
+
+/* ---------- Rodapé ---------- */
+footer {
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px 88px;
+    background-color: var(--cabecalho);
+    border-top: solid 1px var(--borda-cabecalho);
+    font-family: "Fredoka", Arial, sans-serif;
 }
 
-.Vagas {
-    margin-left: 35px;
-    margin-top: 35px;
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+footer ul a {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: var(--destaque);
+    border-radius: 9px;
+    transition: background-color 0.2s;
+}
+
+footer ul a:hover {
+    background-color: var(--destaque-claro);
+}
+
+/* ---------- Celular e telas pequenas ---------- */
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 16px 20px;
+    }
+
+    header nav {
+        max-width: none;
+    }
+
+    header nav ul {
+        padding: 0 10px;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    section,
+    section:first-of-type {
+        margin: 20px 14px;
+        padding: 26px 22px 30px;
+        font-size: 16px;
+    }
+
+    section:first-of-type h2:first-of-type {
+        font-size: 28px;
+    }
+
+    section:first-of-type h2:nth-of-type(2) {
+        font-size: 19px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
 }
