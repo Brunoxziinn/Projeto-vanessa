@@ -146,18 +146,6 @@
     display: flex;
 }
 
-.card_edit {
-    border: 2px solid black;
-    width: 19%;
-    height: 40px;
-    background-color: rgb(254, 254, 255);
-    display: flex;
-    margin-left: 580px;
-    margin-top: 10px;
-    border-radius: 9px;
-    box-shadow: 2px 4px 8px black;
-}
-
 .conatiner_habilidades {
     border: 2px;
     width: 22.6%;
