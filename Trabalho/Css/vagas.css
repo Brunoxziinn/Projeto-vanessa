@@ -175,3 +175,9 @@ main h2 {
 .btn-cursos:hover {
     background-color: #eeeeee;
 }
+
+.botao_cursos {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
