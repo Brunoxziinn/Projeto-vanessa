@@ -7,17 +7,8 @@
     font-size: 40px;
 }
 
-.carrossel {
-    border: 2px;
-    background-color: white;
-    width: 300%;
-    height: 650px;
-    overflow: hidden;
-    border: transparent;
-}
 
-
-
+/* Grupo das vagas */
 .barra_vagas {
     border: 2px solid rgb(132, 0, 240);
     border-radius: 35px;
